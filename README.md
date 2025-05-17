@@ -1,4 +1,7 @@
 # HTML/CSS Resume Template
+
+TLDR: download [index.html](./index.html), edit, then print as PDF.
+
 ![split](https://github.com/user-attachments/assets/08eae58b-147e-4e99-a974-0ce18c062e03)
 
 Write your resume with just HTML and CSS! \
