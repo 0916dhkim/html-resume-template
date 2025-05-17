@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danny Kim - Resume</title>
+    <style>
+      /* CSS Reset */
+      *,
+      ::after,
+      ::before,
+      ::backdrop {
+        margin: 0;
+        padding: 0;
+
+        box-sizing: border-box;
+        border: 0 solid;
+      }
+
+      html {
+        color-scheme: light dark;
+        font-family: "Times New Roman", serif;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+
+      ul,
+      ol,
+      li {
+        list-style: none;
+      }
+    </style>
+    <style>
+      /* Theme */
+      :root {
+        /* Customize these variables to tweak colors. */
+        --color-paper: light-dark(#efefef, #161616);
+        --color-backdrop: light-dark(#7a7979, black);
+        --color-highlight: light-dark(midnightblue, #ddb22b);
+        --color-text-primary: light-dark(black, #dddddd);
+        --color-text-secondary: light-dark(#333, #aaaaaa);
+      }
+
+      body {
+        background: var(--color-backdrop);
+        color: var(--color-text-primary);
+        padding: 3rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @media print {
+          background: transparent;
+          padding: 0;
+        }
+        @media screen and (max-width: 40rem) {
+          padding: 0;
+        }
+      }
+
+      main {
+        padding: 3rem;
+        background: var(--color-paper);
+        max-width: 54rem;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        @media print {
+          padding: 0;
+          background: transparent;
+          width: 100%;
+          box-shadow: none;
+        }
+      }
+
+      section {
+        margin-bottom: 0.5rem;
+      }
+
+      h1 {
+        color: var(--color-highlight);
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      h2 {
+        color: var(--color-highlight);
+        border-bottom: 0.125rem solid var(--color-highlight);
+        font-size: 1.5rem;
+        font-weight: bold;
+
+        margin-top: 1rem;
+        margin-bottom: 0.5rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+        font-weight: bold;
+
+        time {
+          float: inline-end;
+          font-size: 1rem;
+          font-weight: normal;
+        }
+      }
+
+      h4 {
+        font-size: 0.75rem;
+        font-style: italic;
+        color: var(--color-text-secondary);
+      }
+
+      ul {
+        padding-left: 0.5rem;
+      }
+
+      li {
+        padding-left: 0.5rem;
+      }
+
+      li::marker {
+        content: "•";
+      }
+
+      header {
+        display: flex;
+        gap: 1rem;
+        h1 {
+          flex: 1;
+        }
+        .right {
+          text-align: end;
+        }
+      }
+
+      /* Use this on elements that you want to avoid breaking across pages. */
+      .nobreak {
+        @media print {
+          break-inside: avoid-page;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <h1>Danny Kim</h1>
+        <div class="right">
+          <p><a href="mailto:youremail@gmail.com">youremail@gmail.com</a></p>
+          <p><a href="tel:000-000-0000">000-000-0000</a></p>
+          <p>Toronto, ON</p>
+          <p><a href="https://www.linkedin.com/in/yourprofile/">LinkedIn</a></p>
+          <p><a href="https://github.com/yourprofile">GitHub</a></p>
+        </div>
+      </header>
+      <section>
+        <h2>Experience</h2>
+        <section>
+          <h3>Monsters Inc. <time>Jan 2021 - Present</time></h3>
+          <h4>Senior Data Systems Analyst</h4>
+          <ul>
+            <li>
+              Designed and optimized scream-to-energy conversion analytics,
+              improving operational efficiency by 37%.
+            </li>
+            <li>
+              Led cross-dimensional data integration project to transition from
+              scream-based to laugh-based energy models.
+            </li>
+            <li>
+              Collaborated with the R&D team to implement emotion-sensitive IoT
+              sensors across the facility, enhancing data collection accuracy.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Baymax Logic <time>Jun 2018 - Dec 2020</time></h3>
+          <h4>AI Wellness Architect</h4>
+          <ul>
+            <li>
+              Developed empathetic AI algorithms for personalized healthcare
+              companions based on neural emotional mapping.
+            </li>
+            <li>
+              Decreased system error rates by 45% through human-centered testing
+              protocols and reinforcement learning.
+            </li>
+            <li>
+              Led a digital health initiative that served over 500,000 users in
+              the Asia-Pacific region.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Black Mesa Innovations <time>Jul 2015 - May 2018</time></h3>
+          <h4>Lead Innovation Engineer</h4>
+          <ul>
+            <li>
+              Directed quantum research initiatives focused on interdimensional
+              transport and anomalous material testing.
+            </li>
+            <li>
+              Spearheaded ethical compliance task force post-Containment Breach
+              Procotol review.
+            </li>
+            <li>
+              Authored key internal white papers on teleportation safety
+              frameworks and AI-enhanced hazard detection.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Zootopia Global Consulting <time>Aug 2012 - Jun 2015</time></h3>
+          <h4>Strategy & Operations Consultant</h4>
+          <ul>
+            <li>
+              Advised diverse municipal clients on smart city infrastructure,
+              traffic flow optimization, and species-inclusive design.
+            </li>
+            <li>
+              Managed inter-species mediation technology rollout, increasing
+              public approval ratings by 62%.
+            </li>
+            <li>
+              Conducted cultural intelligence seminars for leadership teams
+              across 15+ territories.
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <h2>Volunteering & Community</h2>
+        <section>
+          <h3>Voices of Tomorrow Foundation <time>Mar 2019 - Present</time></h3>
+          <h4>Community Speaker, Event Organizer</h4>
+          <ul>
+            <li>
+              Led workshops and panels across major cities (and select
+              interdimensional hubs) on inclusive software design and empathetic
+              AI systems.
+            </li>
+            <li>
+              Organized the annual TechKind Summit, attracting 3,000+ attendees
+              focused on compassionate computing and responsive innovation.
+            </li>
+            <li>
+              Mentored young developers from underrepresented species and
+              regions through storytelling-based code education.
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Open-source Software Contribution</h3>
+          <ul>
+            <li>Contributed to the development of BigHeroScript.</li>
+            <li>
+              Participated in a civic tech project to address species-inclusive
+              urban planning in the Zootopia metropolitan area. Built the zoning
+              visualization tool and mobility accessibility widget.
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="nobreak">
+        <h2>Skills</h2>
+        <section>
+          <h3>Expertise</h3>
+          <p>
+            Full-stack Web Development; Scalable System Architecture; Baymax
+            Protocol v2; Black Mesa Quantum Logic Framework
+          </p>
+        </section>
+        <section>
+          <h3>Daily Tools</h3>
+          <p>TypeScript; Node.JS; React; MonsterDB</p>
+        </section>
+        <section>
+          <h3>Other Professional Skills</h3>
+          <p>
+            Cross-Species UX Design; Interdimensional Data Compliance;
+            JavaScript; Java; Python; CSS; Tailwind; GraphQL; React Native; SQL;
+            MongoDB; Docker; Firebase; Google Cloud Platform; Express; Flask;
+            Prisma; Drizzle; Nexus; OAuth integration
+          </p>
+        </section>
+      </section>
+      <section>
+        <h2>Education</h2>
+        <section>
+          <h3>Monsters University <time>2008 - 2012</time></h3>
+          <h4>B.Sc Computer Science</h4>
+          <ul>
+            <li>Graduated with Honors</li>
+            <li>Dean's List (2010 - 2012)</li>
+            <li>GPA: 4.18/4.0</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>
